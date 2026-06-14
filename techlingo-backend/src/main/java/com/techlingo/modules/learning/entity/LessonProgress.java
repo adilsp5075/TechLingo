@@ -1,5 +1,7 @@
 package com.techlingo.modules.learning.entity;
 
+import java.util.Set;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -24,4 +26,9 @@ public class LessonProgress {
     private String lessonId;
     private LessonStatus status;
     private Integer score;
+
+    /**
+     * Questions correctly answered
+     */
+    private Set<String> completedQuestionIds;
 }

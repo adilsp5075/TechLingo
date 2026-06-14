@@ -6,4 +6,6 @@ import com.techlingo.modules.learning.entity.Question;
 
 public interface QuestionRepository extends MongoRepository<Question, String> {
     List<Question> findByLessonId(String lessonId);
+
+    long countByLessonId(String lessonId);
 }

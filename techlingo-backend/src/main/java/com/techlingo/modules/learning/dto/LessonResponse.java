@@ -14,4 +14,7 @@ public class LessonResponse {
     private Integer lessonOrder;
     private Integer xpReward;
     private LessonStatus status;
+    private Integer completedQuestions;
+    private Integer totalQuestions;
+    private Integer progressPercentage;
 }
